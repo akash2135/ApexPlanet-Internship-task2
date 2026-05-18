@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Task 2 Project</title>
+
+    <link rel="stylesheet" href="contact.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Animated Background -->
+    <div class="bg-animation"></div>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            WebDev Task-2
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#todo">To-Do</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+        </ul>
+
+    </nav>
+
+    <!-- Hero Section -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <h1>
+                Modern Responsive Web Project
+            </h1>
+
+            <p>
+                Contact Form,
+                Dynamic To-Do List & Image Gallery
+                using HTML, CSS & JavaScript
+            </p>
+
+            <button onclick="scrollToSection()">
+                Explore Project
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+
+    <section class="contact-section" id="contact">
+
+        <!-- Left -->
+
+        <div class="contact-left">
+
+            <h2>Contact Us</h2>
+
+            <p>
+                Responsive Contact Form with validation,
+                animation and modern UI design.
+            </p>
+
+            <div class="info-box">
+                <i class="fa-solid fa-location-dot"></i>
+                <span>Dhanbad, India</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-envelope"></i>
+                <span>akash34118@gmail.com</span>
+            </div>
+
+            <div class="info-box">
+                <i class="fa-solid fa-phone"></i>
+                <span>+91 9304536458</span>
+            </div>
+
+        </div>
+
+        <!-- Right -->
+
+        <div class="contact-right">
+
+            <form id="contactForm">
+
+                <h2>Get In Touch</h2>
+
+                <div class="input-box">
+                    <input type="text"
+                        id="name"
+                        placeholder="Enter your name">
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <input type="email"
+                        id="email"
+                        placeholder="Enter your email">
+
+                    <small class="error"></small>
+                </div>
+
+                <div class="input-box">
+                    <textarea id="message"
+                        rows="5"
+                        placeholder="Write your message"></textarea>
+
+                    <small class="error"></small>
+                </div>
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- To Do -->
+
+    <section class="todo-section" id="todo">
+
+        <h1>Dynamic To-Do List</h1>
+
+        <div class="todo-box">
+
+            <input type="text"
+                id="taskInput"
+                placeholder="Enter Task">
+
+            <button onclick="addTask()">
+                Add Task
+            </button>
+
+        </div>
+
+        <ul id="taskList"></ul>
+
+    </section>
+
+    <!-- Gallery -->
+
+    <section class="gallery-section" id="gallery">
+
+        <h1>Dynamic Image Gallery</h1>
+
+        <div class="gallery-input">
+
+            <input type="text"
+                id="imageUrl"
+                placeholder="Paste Image URL">
+
+            <button onclick="addImage()">
+                Add Image
+            </button>
+
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+
+            <div class="image-card">
+                <img src="https://thumbs.dreamstime.com/b/web-development-coding-programming-internet-technology-business-concept-web-development-coding-programming-internet-technology-121903546.jpg">
+                <button onclick="removeImage(this)">
+                    Remove
+                </button>
+            </div>
+
+            <div class="image-card">
+                <img src="https://tse3.mm.bing.net/th/id/OIP.Fr4DUmhnd9h2OVKx_0zQYwHaFb?rs=1&pid=ImgDetMain&o=7&rm=3">
+
+                <button onclick="removeImage(this)">
+                    Remove
+                </button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+        <p>
+            Created by Aakash | Internship Task-2 | ApexPlanet Software Pvt. Ltd
+        </p>
+    </footer>
+
+    <script src="contact.js"></script>
+
+</body>
+</html>
